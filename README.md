@@ -5,7 +5,7 @@ FDTD simulation for whispering-gallery modes resonance calculation, the example 
 
 2. Microring_response_calculation.m \
 After calculating the coupling coefficient from the Lumerical FDTD, the coupling can be substitue into the Matlab function to work out the spectrum response.\
-This Matlab file returns amplitude reponse and phase response by substituting coupling coefficeint calculated in 1. coupling_coefficients_calculation.fsp \
+This Matlab file returns amplitude reponse and phase response by substituting coupling coefficeint calculated in 1. coupling_coefficients_calculation.fsp
 
 3. loss_calculation_all_pass.m or loss_calculation_add_drop.m \
 Due the fabrication error, the design coupling coefficient may be different as the actual fabricated structure. To solve this problem, this Matlab script helps to calculate the coupling coeffcient and propagation loss. \
