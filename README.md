@@ -8,7 +8,8 @@ After calculating the coupling coefficient from the Lumerical FDTD, the coupling
 
 3. Filename\
 Due the fabrication error, the design coupling coefficient may be different as the actual fabricated structure. To solve this problem, this Matlab script helps to calculate the coupling coeffcient and propagation loss. \
-The 
+The inaccuracy of the \
+
 
 
 
