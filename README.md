@@ -17,4 +17,4 @@ The characteristic polynomial will give 4 different roots, first two positive ro
 
 More details of the background and fundamental knowledge is covered in my thesis. Link will be available when University uploads it in the database. 
 
-The author would like to thank the help from Lumerical Knowledge Exchange (https://kx.lumerical.com/), and I learnt a lot from book 'Silicon photonics design: from devices to systems' by Lukas Chrostowski. 
+The author would like to thank the help from Lumerical Knowledge Exchange (https://kx.lumerical.com/), and the book 'Silicon photonics design: from devices to systems' by Lukas Chrostowski is a very good tool book for the designers. 
