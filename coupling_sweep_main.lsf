@@ -1,0 +1,51 @@
+# This prgram is used for coupling calculaton estimation. 
+# Author name: Wenjian Yang
+# Email: yangelec@gmail.com
+
+switchtolayout; clear;
+# Global variables
+lambda = 1.55;
+lc = 16;
+
+spacing_gap_begining = 0.3e-6;
+
+sweep_range = 10;
+data_array = matrix(2,sweep_range);
+for(x =1:sweep_range){
+    # Parameter to sweep
+    spacing_gap = spacing_gap_begining + 0.1e-6*x/sweep_range;
+    ?spacing_gap;
+    
+    # Geometry modificatons
+    modified_part="Si_right";
+    setnamed(modified_part,"y", spacing_gap);
+    
+    # Mode analysis
+    findmodes;
+    selectmode(1);
+    neff1 = getdata('mode1','neff');
+    neff2 = getdata('mode2','neff');
+    
+    # Calculation of coefficient
+    lb = lambda/(2*(neff1 - neff2)); # Beating length
+    k_sqaure = sin((pi/2)*(lc/lb))^2;
+    ?k_sqaure;
+    
+    # Save to matrix
+    data_array(1,x) = spacing_gap;
+    data_array(2,x) = k_sqaure;
+    
+    # Switch to layout mode for next run
+    switchtolayout;
+    }
+
+out = plot(data_array(1,1:sweep_range),data_array(2,1:sweep_range));
+
+
+
+
+
+
+
+
+
