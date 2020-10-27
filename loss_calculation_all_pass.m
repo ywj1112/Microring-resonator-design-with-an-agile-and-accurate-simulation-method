@@ -1,3 +1,6 @@
+# Author name: Wenjian Yang
+# Email: yangelec@gmail.com
+
 % %% initialization 
 % FSR = 2.687251799783326; % nm
 % BW = 0.131331724380061; % nm

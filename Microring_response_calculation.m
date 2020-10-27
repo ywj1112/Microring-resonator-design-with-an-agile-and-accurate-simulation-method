@@ -1,3 +1,6 @@
+# Author name: Wenjian Yang
+# Email: yangelec@gmail.com
+
 lambda = (1525:0.0001:1580)*1e-9;
 
 [Ethru Edrop Qi Qc]=RingResonator(lambda, 'add-drop', 10.081e-6, 0);
