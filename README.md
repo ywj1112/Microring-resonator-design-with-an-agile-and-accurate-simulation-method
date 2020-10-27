@@ -2,7 +2,7 @@
 In this Project, several simulation methods and example files for silicon photonic applications are provided, including
 
 1. Coupling_calculation_sweep.lms \ 
-Simluation for coupling coefficient calculaton estimation, can be used for any straight waveguide coupling method for any materials. It can be used as estimation for microring resonator desing. 
+Simulation for coupling coefficient calculation estimation, can be used for any straight waveguide coupling method for any materials. It can be used as estimation for microring resonator design. 
 
 2. Coupling_calculation_sweep.lsf \
 The automation script makes the lms file more powerful, it can do fully automatic wide range sweeping for coupling coefficient calculation. 
@@ -11,7 +11,7 @@ The automation script makes the lms file more powerful, it can do fully automati
 FDTD simulation for whispering-gallery modes resonance calculation, the example file is based on Lumerical FDTD for the microring resonator simulation. 
 
 4. Microring_response_calculation.m \
-After calculating the coupling coefficient from the Lumerical FDTD, the coupling can be substitue into the Matlab function to work out the spectrum response.\
+After calculating the coupling coefficient from the Lumerical FDTD, the coupling can be substitued into the Matlab function to work out the spectrum response.\
 This Matlab file returns amplitude response and phase response by substituting coupling coefficient calculated in 1 2 3 above. 
 
 5. loss_calculation_all_pass.m or loss_calculation_add_drop.m \
